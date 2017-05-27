@@ -1,0 +1,213 @@
+﻿<!DOCTYPE html>
+<html>
+
+   <head>
+   <!--
+      Portfolio: Jacob Barnes
+      Author: Jacob Barnes  
+      Date:   10/25/13                   
+   -->
+
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+      <meta name="description" content="The Professional Portfolio of Jacob Barnes" />
+      <meta name="keywords" content="Jacob, Barnes, Portfolio, Professional"/>
+      <title>The Professional Portfolio of Jacob Barnes</title>
+      <link href="StyleSheets/Default.css" rel="stylesheet" type="text/css" />
+      <link href="StyleSheets/Home.css" rel="stylesheet" type="text/css" />
+   </head>
+
+
+   <body>
+      <header>
+        <div class="header">
+			<ul id="menu" class="menu">
+				<li>
+					<a href="Index.htm">
+					<a href="Index.htm">
+						<img src="Images/1.jpg" alt=""/>
+						<span class="active"></span>
+						<span class="wrap">
+							<span class="link">Home</span>
+							<span class="descr">From the Beginning.</span>
+						</span>
+					</a>
+				</li>
+				<li>
+					<a href="Pages/About.htm">
+						<img src="Images/2.jpg" alt=""/>
+						<span class="active"></span>
+						<span class="wrap">
+							<span class="link">About Me</span>
+							<span class="descr">Who is Jacob Barnes?</span>
+						</span>
+					</a>
+				</li>
+				<li>
+					<a href="Pages/Goals.htm">
+						<img src="Images/3.jpg" alt=""/>
+						<span class="active"></span>
+						<span class="wrap">
+							<span class="link">Goals</span>
+							<span class="descr">A collection of my work.</span>
+						</span>
+					</a>
+					<div class="box">
+						<a href="Pages/Goals/Goal1.htm">Goal 1</a>
+						<a href="#">Goal 2</a>
+						<a href="#">Goal 3</a>
+						<a href="#">Goal 4</a>
+						<a href="#">Goal 5</a>
+						<a href="#">Goal 6</a>
+						<a href="#">Goal 7</a>
+					</div>
+				</li>
+				<li>
+					<a href="Pages/Downloads.htm">
+						<img src="Images/4.jpg" alt=""/>
+						<span class="active"></span>
+						<span class="wrap">
+							<span class="link">Downloads</span>
+							<span class="descr">Various content I've developed.</span>
+						</span>
+					</a>
+				</li>
+				<li>
+					<a href="Pages/Projects.htm">
+						<img src="Images/5.jpg" alt=""/>
+						<span class="active"></span>
+						<span class="wrap">
+							<span class="link">Projects</span>
+							<span class="descr">Additional ways I spend my time.</span>
+						</span>
+					</a>
+					<div class="box">
+						<a href="#">DMEngine</a>
+						<a href="#">CSAnalyzer</a>
+						<a href="#">CombatEngine</a>
+					</div>
+				</li>
+				<li>
+					<a href="Pages/Contact.htm">
+						<img src="Images/6.jpg" alt=""/>
+						<span class="active"></span>
+						<span class="wrap">
+							<span class="link">Contact Me</span>
+							<span class="descr">All of my contact info.</span>
+						</span>
+					</a>
+				</li>
+			</ul>
+		</div>
+      </header>
+      
+      <div class="body">
+        <section class="message "id="message">
+            <h1>Welcome to the homepage of my portfolio.</h1>
+            <div id="home1">
+                <h2>Recent News</h2>
+                <ul>
+                    <li>
+                        10/25/13 - Officially into the 2nd half of the semester.
+                    </li>
+                    <li>
+                        10/18/13 - Fall Break.
+                    </li>
+                    <li>
+                        09/09/13 - Received my Associate's after finally paying my balance to Newman.
+                        <img src="images/education1.jpg"/>
+                    </li>
+                    <li>
+                        09/07/13 - Began work towards creating the storyline for game development.
+                    </li>
+                    <li>
+                        08/29/13 - 26 years ago, on this date, I was born.
+                    </li>
+                    <li>
+                        08/19/13 - My team, innovators anonymous, won the innovation challenge for Flint Hills Resources IT department.
+                    </li>
+                </ul>
+            </div>
+
+            <div id="home2"> 
+                <h2>Upcoming Events</h2>
+                <ul>
+                    <li>
+                        11/11/13 - My 2nd anniversary with my beautiful girlfriend Christianne Lindsey.
+                        <img src="images/upcoming1.jpg"/>
+                    </li>
+                    <li>
+                        01/01/14 - Welcome 2014.
+                    </li>
+                    <li>
+                        01/10/14 - Begin the intial work on the Environment Management and Visualization Tool project.
+                    </li>
+                </ul>
+            </div>
+
+            <div id="home3">
+                <h2>Tech Twitters</h2>
+                <div style="width:240px;font-size:8px;text-align:right;">
+                    <script type="text/javascript">
+                        document.write(unescape("%3Cscript src='http://twitterforweb.com/twitterbox.js?username=TechReview&settings=1,0,3,240,300,f4f4f4,1,cc7c14,101010,1,1,336699' type='text/javascript'%3E%3C/script%3E"));
+                    </script>     
+                </div>
+            </div>                  
+        </section> 
+      </div>	
+
+      <!--JQuery implementation for several animation effects on mouseenter and mouseleave events-->       	
+      <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+      <script type="text/javascript" src="JavaScript/jquery.easing.1.3.js"></script>
+      <script type="text/javascript">
+           $(function () {
+               $('#menu > li').bind('mouseenter', function () {
+                   var $elem = $(this);
+                   $elem.find('img')
+                        .stop(true)
+                        .animate({
+                            'width': '185px',
+                            'height': '170px',
+                            'left': '0px'
+                        }, 400, 'easeInCubic')
+                        .andSelf()
+                        .find('.wrap')
+                        .stop(true)
+                        .animate({ 'top': '150px' }, 500, 'easeOutCubic')
+                        .andSelf()
+                        .find('.active')
+                        .stop(true)
+                        .animate({ 'height': '90px' }, 300, function () {
+                            var $sub_menu = $elem.find('.box');
+                            if ($sub_menu.length) {
+                                var left = '185px';
+                                if ($elem.parent().children().length == $elem.index() + 1)
+                                    left = '-185px';
+                                $sub_menu.show().animate({ 'left': left, 'top': '150px' }, 200);
+                            }
+                        });
+               }).bind('mouseleave', function () {
+                   var $elem = $(this);
+                   var $sub_menu = $elem.find('.box');
+                   if ($sub_menu.length)
+                       $sub_menu.hide().css('left', '0px');
+
+                   $elem.find('.active')
+                        .stop(true)
+                        .animate({ 'height': '0px' }, 300)
+                        .andSelf().find('img')
+                        .stop(true)
+                        .animate({
+                            'width': '0px',
+                            'height': '0px',
+                            'left': '85px'
+                        }, 400)
+                        .andSelf()
+                        .find('.wrap')
+                        .stop(true)
+                        .animate({ 'top': '25px' }, 500);
+               });
+           });
+        </script>
+    </body>
+
+</html>

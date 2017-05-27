@@ -1,0 +1,130 @@
+﻿/*
+   Portfolio: Jacob Barnes
+
+*/
+
+/*Basic Styles*/
+#goal1,#goal2{
+    float:left;
+    clear:right;
+    width:48%;
+    padding:5px 0px 0px 5px;
+    height:75%;
+}
+#goal1{
+    border-right:1px gray solid;
+    padding-right:5px;
+}
+div.body p, div.body h2{
+    padding-left:5px;
+}
+div.body h2{
+    font-size:1.2em;
+    text-shadow:0px 0px 0px black;
+}
+
+/*Goals Specific Styles*/
+span.summary{
+    font-size:0.5em;
+    padding-left:2px;
+    letter-spacing:1.5px;
+}
+span.summaryLong{
+    font-size:0.48em;
+    padding-left:2px;
+    letter-spacing:1.0px;
+}
+#goalComplete{
+    height:650px;
+    margin-bottom:20px;
+}
+
+#DL1, #DL2{
+    float:left;
+    clear:right;
+    margin:75px 0px 0px 10px;
+}
+#DL2{
+    margin-left:435px;
+}
+p{
+    margin:5px;
+    height:500px;
+}
+
+/*Table Styles*/
+table{
+    font-size:12px;
+    margin:0px 0px 20px 10px;
+    border-collapse:collapse;
+    background-size:cover;
+    text-align:center;
+}
+
+table td, th{
+    padding:0px 5px;
+}
+
+table caption{
+    font-size:10px;
+    letter-spacing:2px;
+
+    margin-bottom:5px;
+}
+
+table thead{
+    border-bottom: 2px solid gray;
+}
+
+table thead tr{
+    height:30px;
+}
+
+table thead th{
+    padding:0px 5px;
+    letter-spacing:2px;
+}
+
+table tfoot{
+    border-bottom: 2px solid gray;
+    text-align:center;
+}
+
+table tfoot tr{
+    height:40px;
+}
+table tbody td a{
+    text-decoration:none;
+    color:black;
+}
+table tbody td a:hover{
+    color:darkblue;
+    font-weight:bolder;
+}
+table tbody tr{
+    height:30px;
+    border-bottom:1px dotted gray;
+}
+table tbody td:first-of-type{
+    font-weight:bold;
+}
+
+table tbody tr:nth-of-type(2n){
+    background-color:rgba(203, 93, 14, 0.75);
+}
+
+table tbody tr:nth-of-type(2n+1){
+    background-color:rgba(255,255,255,.6);
+}
+
+table col.firstColumn{
+    width:22%;
+}
+
+table col.middleColumn{
+    width:28%;
+}
+
+table col.lastColumn{
+    width:22%;
+}

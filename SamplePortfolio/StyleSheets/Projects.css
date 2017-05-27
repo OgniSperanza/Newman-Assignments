@@ -1,0 +1,15 @@
+/*
+   Portfolio: Jacob Barnes
+
+*/
+
+/*Basic Styles*/
+section p{
+    text-align:center;
+    font-size:48px;
+    letter-spacing:3px;
+    text-decoration:underline;
+    text-shadow:5px 5px 5px Black;
+    padding:10% 10%;
+    font-weight:bold;
+}

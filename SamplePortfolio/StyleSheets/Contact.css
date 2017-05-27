@@ -1,0 +1,109 @@
+/*
+   Portfolio: Jacob Barnes
+
+*/
+
+/*Basic Styles*/
+#c1,#c2,#c3{
+    float:left;
+    clear:right;
+    width:32%;
+    padding:5px 0px 0px 5px;
+    height:75%;
+}
+#c1{
+    border-right:1px gray solid;
+}
+#c3{
+    border-left:1px gray solid;
+}
+
+/*Contact Specific Styles*/
+#c2 label,input, textarea{
+    float:left;
+    clear:left;
+}
+#c2 form fieldset{
+    height:90%;
+}
+p{
+    padding-left:5px;
+}
+#c2{
+    padding-right:5px;
+}
+
+/*Tables Styles*/
+table{
+    font-size:12px;
+    margin:0px 0px 20px 10px;
+    border-collapse:collapse;
+    background-size:cover;
+    text-align:center;
+}
+
+table td, th{
+    padding:0px 5px;
+}
+
+table caption{
+    font-size:10px;
+    letter-spacing:2px;
+
+    margin-bottom:5px;
+}
+
+table thead{
+    border-bottom: 2px solid gray;
+}
+
+table thead tr{
+    height:30px;
+}
+
+table thead th{
+    padding:0px 5px;
+    letter-spacing:2px;
+}
+
+table tfoot{
+    border-bottom: 2px solid gray;
+    text-align:center;
+}
+
+table tfoot tr{
+    height:40px;
+}
+table tbody td{
+    color:black;
+}
+table tbody td a{
+    text-decoration:none;
+    color:black;
+}
+table tbody td a:hover{
+    color:darkblue;
+    font-weight:bolder;
+}
+table tbody tr{
+    height:30px;
+    border-bottom:1px dotted gray;
+}
+table tbody td:first-of-type{
+    font-weight:bold;
+}
+
+table tbody tr:nth-of-type(2n){
+    background-color:rgba(203, 93, 14, 0.75);
+}
+
+table tbody tr:nth-of-type(2n+1){
+    background-color:rgba(255,255,255,.6);
+}
+
+table col.firstColumn{
+    width:22%;
+}
+table col.lastColumn{
+    width:22%;
+}

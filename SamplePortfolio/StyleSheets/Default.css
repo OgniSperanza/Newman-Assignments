@@ -1,0 +1,155 @@
+﻿/*
+   Portfolio: Jacob Barnes
+
+*/
+
+/*Basic Styles*/
+body{
+    background:url(../Images/ws_background.jpg) no-repeat;
+    background-attachment:fixed;
+    background-size:cover;
+    font-family:'Bookman Old Style', Bookman, 'URW Bookman L', 'Palatino Linotype', serif;
+	font-size:14px;
+}
+div.body{
+    float:left;
+    clear:both;
+    margin: 0px 15%;
+}    
+div.body section{
+    background:rgba(255,255,255,0.85);
+    color:rgba(203, 93, 14, 0.85);
+    width:1110px;
+    height:500px;
+    -moz-border-radius:15px;
+    -webkit-border-radius:15px;
+    border-radius:15px;
+
+	-moz-box-shadow:0px 0px 2px black inset;
+	-webkit-box-shadow:0px 0px 2px black inset;
+	box-shadow:0px 0px 2px black inset;
+}
+div.body section > h1{
+    padding:5px 0px 0px 10px;
+}
+div.header{
+    margin: 30px 15%;
+    width:1120px;
+}
+div.footer{
+    margin: 0px 15%;
+    width:1120px;
+}
+
+span.reference a:hover{
+	color:lightgray;
+}
+
+/*Navigation List Styles*/
+ul.menu{
+    margin-top:50px;
+    width:1120px;
+	padding:0;
+	list-style: none;
+	
+}
+ul.menu a{
+	text-decoration:none;
+	outline:none;
+}
+ul.menu li{
+	float:left;
+	width:185px;
+	height:145px;
+	position:relative;
+	cursor:pointer;
+    top: -2px;
+    left: -1px;
+}
+ul.menu li > a{
+	position:absolute;
+	top:0px;
+	left:0px;
+	width:185px;
+	height:150px;
+	z-index:12;
+	background:url('../misc/images/overlay.png') no-repeat right bottom;
+	-moz-box-shadow:0px 0px 2px black inset;
+	-webkit-box-shadow:0px 0px 2px black inset;
+	box-shadow:0px 0px 2px black inset;
+}
+ul.menu li a img{
+	border:none;
+	position:absolute;
+	width:0px;
+	height:0px;
+	bottom:0px;
+	left:85px;
+	z-index:100;
+	-moz-box-shadow:0px 0px 4px black;
+	-webkit-box-shadow:0px 0px 4px black;
+	box-shadow:0px 0px 4px black;
+}
+ul.menu li span.wrap{
+	position:absolute;
+	top:23px;
+	left:0px;
+	width:185px;
+	height:121px;
+	z-index:15;
+}
+ul.menu li span.active{
+	position:absolute;
+	background:black;
+	top:150px;
+	width:185px;
+	height:0px;
+	left:0px;
+	z-index:14;
+	-moz-box-shadow:0px 0px 4px black inset;
+	-webkit-box-shadow:0px 0px 4px black inset;
+	box-shadow:0px 0px 4px black inset;
+}
+ul.menu li span span.descr,
+ul.menu li span span.link,
+ul.menu li div.box a{
+	margin-left:15px;
+	text-transform:uppercase;
+	text-shadow:1px 1px 1px black;
+}
+ul.menu li span span.link{
+	color:#fff;
+	font-size:24px;
+	float:left;
+	clear:both;
+}
+ul.menu li span span.descr{
+	color:darkorange;
+	float:left;
+	clear:both;
+	font-size:10px;
+	letter-spacing:1px;
+}
+ul.menu li div.box{
+	display:block;
+	position:absolute;
+	width:185px;
+	overflow:hidden;
+	height:250px;
+	top:95px;
+	left:0px;
+	display:none;
+	background:black;
+}
+ul.menu li div.box a{
+	float:left;
+	clear:both;
+	line-height:30px;
+	color: darkorange;
+}
+ul.menu li div.box a:first-child{
+	margin-top:15px;
+}
+ul.menu li div.box a:hover{
+	color:white;
+}
