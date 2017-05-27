@@ -1,0 +1,36 @@
+﻿.newwindow{
+        text-align:center;
+}
+.newwindow a{
+	font-family:Helvetica, Arial, 'DejaVu Sans', 'Liberation Sans', Freesans, sans-serif;
+	width:90%;
+    text-align:left;
+	text-decoration:none;
+	text-transform:uppercase;
+	font-weight:400;
+	display:block;
+	color:rgb(159, 159, 159);
+    margin:0% 0% 10% 0%;
+}
+
+.newwindow a:hover{
+	color:red;
+    text-shadow:red 0px 2px 4px;
+    font-weight:bold;
+    letter-spacing:1px;
+}
+
+figure{
+    position:relative;
+    align-content:center;
+    height:auto;
+    width:auto;
+}
+
+figure img{
+    border-radius:15px;
+}
+
+.right h3{
+    text-align:left;
+}

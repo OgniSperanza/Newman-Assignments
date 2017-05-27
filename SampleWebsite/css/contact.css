@@ -1,0 +1,18 @@
+﻿#contact p a{
+	font-family:Helvetica, Arial, 'DejaVu Sans', 'Liberation Sans', Freesans, sans-serif;
+	width:90%;
+    text-align:left;
+	text-decoration:none;
+	text-transform:uppercase;
+	font-weight:400;
+	color:rgb(159, 159, 159);
+}
+#contact p a:hover{
+	color:red;
+    text-shadow:red 0px 2px 4px;
+    font-weight:bold;
+    letter-spacing:1px;
+}
+#contactadjust{
+    margin:40% 10%;
+}

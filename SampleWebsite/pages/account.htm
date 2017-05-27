@@ -1,0 +1,109 @@
+﻿<!DOCTYPE HTML>
+
+<html>
+    <head>
+        <!-- Portfolio: Jacob Barnes
+              Author: Jacob Barnes  
+              Date:   11/25/13    --> 	
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Account</title>
+        <meta name="description" content="Jacob Barnes Presents: A Work in Progress">
+        <link rel="stylesheet" type="text/css" href="../css/default.css">
+        <!--JQuery Implementation-->
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+        <script type="text/javascript" src="../scripts/jquery.carouFredSel-5.5.2.js" ></script><!--Scrolling Pictures-->
+        <script type="text/javascript" src="../scripts/jquery.easing.1.3.js"></script>
+        <script type="text/javascript" src="../scripts/jquery.form.js"></script> 
+        <script type="text/javascript" src="../scripts/scripts.js"></script>
+            <!--Sidebar Vertical Nav List-->
+        <link rel="stylesheet" type="text/css" href="../css/blue-glass/sidebar.css" />
+        <script type="text/javascript" src="http://code.jquery.com/ui/1.8.13/jquery-ui.min.js"></script>
+        <script type="text/javascript" src="../scripts/jquery.sidebar.js"></script>
+
+    </head>
+
+
+    <body>
+
+        <div class="box">
+
+	        <div id="top">
+                <div id="title">
+                    <h1 id="subtitle">The Nameless Quest</h1>
+                </div>
+    
+                <nav>	
+                    <ul>
+            	        <li><a href="../index.htm">Home</a></li>
+                        <li><a href="campaign.htm">Campaign</a></li>
+                        <li><a href="features.htm">Features</a></li>
+                        <li><a href="#">Account</a></li>
+                        <li><a href="contact.htm">Contact</a></li>
+                    </ul>      
+                </nav>
+            </div>
+    
+    
+            <hr/>
+    
+        </div>
+
+       <div class="linebreak"></div>
+        <footer id="createaccount">
+	        <div class="subbox">
+    	        <section class="left">
+    	        <h4>Log In</h4>
+                <div id="Div1">
+                    <form method="post" id="Form2" action="#" >
+                        <input type="text" class="formstyle" title="Name" name="name" />
+                        <input type="text" class="formstyle" title="Password" name="password" />
+                        <input class="button" type="submit" value="Send">  
+                    </form>
+                </div>
+                <div class="linebreak"><p>or create an account</p></div>
+    	        <h4>Create an Account</h4>
+                <div id="formwrap">
+                    <form method="post" id="submitform" action="#" >
+                        <input type="text" class="formstyle" title="Name" name="name" />
+                        <input type="text" class="formstyle" title="Email" name="email" />
+                        <input type="text" class="formstyle" title="Confirm Email" name="confirmemail" />
+                        <input class="button" type="submit" value="Send">  
+                    </form>
+                </div>
+
+                </section>    
+        
+    	        <section class="right">
+                    <img src="../images/account.jpg"/>
+                </section> 
+            </div>
+           <div class="linebreak"></div>
+        </footer>
+
+        <!--JQuery Implementaion - Sidebar Vertical Nav-->
+        <ul id="verticalnav" >
+            <li><a href="../index.htm">Home</a></li>
+            <li><a href="campaign.htm">Campaign</a></li>
+            <li><a href="features.htm">Features</a></li>
+            <li><a href="#">Account</a></li>
+            <li><a href="contact.htm">Contact</a></li>
+        </ul>
+
+        <script type="text/javascript">
+            $("ul#verticalnav").sidebar({
+                position: "left",
+                callback: {
+                    item: {
+                        enter: function () {
+                            $(this).find("a").animate({ color: "red" }, 250);
+                        },
+                        leave: function () {
+                            $(this).find("a").animate({ color: "white" }, 250);
+                        }
+                    }
+                }
+            });
+        </script>
+    </body>
+</html>
+
